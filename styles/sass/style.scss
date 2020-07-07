@@ -1,0 +1,72 @@
+@import './setup';
+@import './variablesAndMixins';
+@import './components/header';
+@import './components/about';
+@import './components/quote';
+@import './components/skills';
+@import './components/portfolio';
+@import './components/contact';
+@import './components/footer';
+
+// FONT FAMILIES
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+// FONT SIZE
+
+h1 {
+    font-size: 6.5rem;
+}
+
+h2,
+h4 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+}
+
+// TEXT ALIGN
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+// LINE HEIGHT & SPACING
+
+p {
+    line-height: 1.3;
+    padding-top: 10px;
+}
+
+// LAYOUT
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 10%;
+}
+
+h3 {
+    margin-bottom: 50px;
+}

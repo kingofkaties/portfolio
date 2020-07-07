@@ -1,0 +1,49 @@
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        margin: 20px;
+        padding: 10px;
+    }
+    i {
+        font-size: 4rem;
+    }
+    li:nth-of-type(5n - 4) {
+        @include accent($accentOne);
+        i {
+            color: $accentOneVariant;
+        }
+    }
+    li:nth-of-type(5n - 3) {
+        @include accent($accentTwo);
+        i {
+            color: $accentTwoVariant;
+        }
+    }
+    li:nth-of-type(5n - 2) {
+        @include accent($accentThree);
+        i {
+            color: $accentThreeVariant;
+        }
+    }
+    li:nth-of-type(5n - 1) {
+        @include accent($secondary);
+        i {
+            color: $secondaryVariant;
+        }
+    }
+    li:nth-of-type(5n) {
+        @include accent($accentFour);
+        i {
+            color: $accentFourVariant;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+header {
+    height: 90vh;
+    background-image:
+        linear-gradient(to bottom right, $gradientOneOpacity, $gradientTwoOpacity),
+        url('../../../../assets/letterBackground.jpg');
+    background-size: cover;
+    color: $primary;
+    &::before {
+        content: '';
+        // color: $primary;
+        // background: $primary;
+        // height: 10%;
+        // width: 100%;
+        position: absolute;
+        bottom: 10%;
+        height: 0;
+        width: 0;
+        border-bottom: 5vh solid $secondary;
+        border-left: 100vw solid transparent;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 10%;
+        height: 0;
+        width: 0;
+        border-bottom: 2.5vh solid $primary;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+    }
+}
+
+.heroText {
+    // padding-left: 200px;
+    padding-top: 250px;
+    // text-align: center;
+    span {
+        color: $secondary;
+        font-weight: 500;
+    }
+}

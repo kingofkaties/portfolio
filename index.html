@@ -1,52 +1,105 @@
+<!-- With thanks to Amador Loureiro and Unsplash for the header image. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/61079c5be7.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Katie King</title>
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
-        <h1>Katie King</h1>
-        <h2><span>Web developer</span> with a passion for guiding users through cohesive, intuitive, meaningful experiences.</h2>
+        <div class="heroText wrapper">
+            <h2>Hello! I'm</h2>
+            <h1>Katie King,</h1>
+            <h2>a <span>web developer</span> based in Toronto, Canada.</h2>
+        </div>
     </header>
 
     <!-- ABOUT -->
-    <section>
-        <h3>About Me</h3>
-        <p>Talk to me about 💻web development, 🎲board games, 📚books, or 🐈your cat.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugit similique dolor impedit maxime ex delectus nisi earum vitae quas, aliquid voluptates aspernatur mollitia saepe laudantium repellendus ducimus sunt, odio ullam, ipsam eaque qui tempora? Facere voluptate quibusdam qui vel, nam, omnis voluptates quia aliquid aperiam labore deleniti numquam odio nemo ut repellendus. Aperiam eaque, saepe quibusdam doloribus dolore voluptatum placeat neque consequatur voluptate eum quae quos odit odio iusto magnam. Eveniet facere debitis doloribus fugit dicta, libero quisquam provident fuga voluptate optio alias beatae magnam omnis a facilis corporis, blanditiis ullam dolor inventore! Culpa autem asperiores nostrum recusandae animi illum aliquid iste molestias! Quod voluptatem magnam saepe assumenda sequi perferendis eaque esse, dolorum laborum laudantium vitae velit distinctio minus aliquam, maiores pariatur?</p>
+    <section class="about wrapper">
+        <div class="aboutImg">
+            <img src="./assets/headshot.jpg" alt="A photo of me!">
+        </div>
+        <div class="aboutText">
+            <h3>Creative Thinker, Pragmatic Builder</h3>
+            <p>Hi! I'm seeking a web development role with a side of UX/UI design.</p>
+            <p>In my previous life, I was an editor, where I ran the gamut from children's magazines to legal resources to indie SFF. These days, I'm all about providing users with cohesive, meaningful, and intuitive experiences on the web.</p>
+            <p>I bring <span>precision and conciseness</span> — dry, easy-to-read code — as well as a passion for <span>the bigger picture</span>. I know what makes for a good story, whether you're telling it through a website or a novel.</p>
+            <p>Talk to me about 💻 web development, 🎲 board games, 📚 books, or 🐈 your cat.</p>
+        </div>
     </section>
 
     <!-- QUOTE -->
-    <section>
+    <!-- <section class="quote">
         <blockquote>So be it. See to it.</blockquote>
         <p>~ Octavia Butler</p>
-    </section>
+    </section> -->
 
     <!-- SKILLS -->
-    <section>
+    <section class="wrapper">
         <h3>Skills</h3>
-        <ul>
-            <li><i class="fab fa-html5"></i>HTML5</li>
-            <li><i class="fab fa-css3-alt"></i>CSS3</li>
-            <li><i class="fab fa-sass"></i>Sass</li>
-            <li><i class="fas fa-mobile-alt"></i>Responsive Design</li>
-            <li><i class="fab fa-js-square"></i>JavaScript fundamentals</li>
-            <li><i class="fas fa-dollar-sign"></i>jQuery</li>
-            <li><i class="fab fa-react"></i>React</li>
-            <li><i class="fas fa-cogs"></i>Working with APIs</li>
-            <li><i class="fas fa-database"></i>Firebase</li>
-            <li><i class="fab fa-github"></i>Git & GitHub</li>
-            <li><i class="fas fa-code-branch"></i>Paired programming</li>
-            <li><i class="fas fa-universal-access"></i>Website accessibility requirements</li>
-            <li><i class="fas fa-users"></i>Working in teams</li>
-            <li><i class="fas fa-check-double"></i>Best practices for modern web development</li>
-            <li><i class="fas fa-pencil-alt"></i>Writing & editing targeted content</li>
-            <li><i class="fas fa-portrait"></i>Understanding user stories</li>
+        <ul class="skillsList">
+            <li>
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </li>
+            <li>
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </li>
+            <li>
+                <i class="fab fa-sass"></i>
+                <p>Sass</p>
+            </li>
+            <li>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Responsive Design</p>
+            </li>
+            <li>
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript fundamentals</p>
+            </li>
+            <li><i class="fas fa-dollar-sign"></i><p>
+                jQuery
+            </p></li>
+            <li><i class="fab fa-react"></i><p>
+                React
+            </p></li>
+            <li><i class="fas fa-cogs"></i><p>
+                Working with APIs
+            </p></li>
+            <li><i class="fas fa-database"></i><p>
+                Firebase
+            </p></li>
+            <li><i class="fab fa-github"></i><p>
+                Git & GitHub
+            </p></li>
+            <li><i class="fas fa-code-branch"></i><p>
+                Paired programming
+            </p></li>
+            <li><i class="fas fa-universal-access"></i><p>
+                Website accessibility requirements
+            </p></li>
+            <li><i class="fas fa-users"></i><p>
+                Working in teams
+            </p></li>
+            <li><i class="fas fa-check-double"></i><p>
+                Best practices for modern web development
+            </p></li>
+            <li><i class="fas fa-pencil-alt"></i><p>
+                Writing & editing targeted content
+            </p></li>
+            <!-- <li><i class="fas fa-portrait"></i><p>
+                Understanding user stories
+            </p></li> -->
     </ul>
     </section>
 
@@ -55,7 +108,7 @@
         <h3>Selected Portfolio</h3>
         <div class="beStill">
             <div class="portfolioImg">
-                <img src="https://source.unsplash.com/random" alt="A random image from Unsplash">
+                <img src="./assets/beStill.png" alt="A desktop screenshot of the Be Still landing page">
             </div>
             <div class="portfolioDesc">
                 <h4>Be Still</h4>
@@ -65,7 +118,7 @@
         </div>
         <div class="whatsForDinner">
             <div class="portfolioImg">
-                <img src="https://source.unsplash.com/random" alt="A random image from Unsplash">
+                <img src="./assets/whatsForDinner.png" alt="A desktop screenshot of the What's For Dinner landing page">
             </div>
             <div class="portfolioDesc">
                 <h4>What's For Dinner?</h4>
@@ -75,7 +128,7 @@
         </div>
         <div class="pokedex">
             <div class="portfolioImg">
-                <img src="https://source.unsplash.com/random" alt="A random image from Unsplash">
+                <img src="./assets/personalPokedex.png" alt="A desktop screenshot of the Personal Pokedex landing page">
             </div>
             <div class="portfolioDesc">
                 <h4>Personal Pokédex</h4>

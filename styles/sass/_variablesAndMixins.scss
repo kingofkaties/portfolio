@@ -1,0 +1,19 @@
+$primary: #fff; // white
+$secondary: #eeaa39; // yellow
+$secondaryVariant: #dce53e;
+$accentOne: #5190d0; // blue
+$accentOneVariant: #5155d0;
+$accentTwo: #ec5959; // red
+$accentTwoVariant: #ef9f37;
+$accentThree: #49c997; // green
+$accentThreeVariant: #5fd3d4;
+$accentFour: #e86599; // pink
+$accentFourVariant: #cd70ca;
+$gradientOne: #874cbf; // purple
+$gradientOneOpacity: rgba(135, 76, 191, 0.8); // purple
+$gradientTwo: #e14054; // dark pink
+$gradientTwoOpacity: rgba(225, 64, 84, 0.8); // dark pink
+
+@mixin accent($shadow) {
+    box-shadow: 8px 8px $shadow;
+}

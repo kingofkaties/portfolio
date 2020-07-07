@@ -1,0 +1,21 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutImg {
+    // width: 20%;
+    flex: 0 0 40%;
+    // border: 1px solid black;
+    img {
+        @include accent($secondary);
+    }
+}
+
+.aboutText {
+    // width: 60%;
+    flex: 0 0 50%;
+    h3 {
+        text-align: left;
+    }
+}
