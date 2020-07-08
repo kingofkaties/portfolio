@@ -1,44 +1,38 @@
 .portfolio {
 
     .portfolioImg {
-        width: 60%;
+        width: 70%;
     }
 
     .portfolioDesc {
         width: 50%;
         border: 1px solid black;
         padding: 50px;
-        margin-left: -10%;
+        margin-left: -35%;
         background-color: $primary;
     }
 
-    .beStill {
-        div {
-            float: left;
-        }
+    > div:nth-of-type(2n - 1) {
+
+        display: flex;
+        align-items: center;
         .portfolioDesc {
             @include shadow($secondary);
         }
     }
 
-    .whatsForDinner {
-        div {
-            float: right;
-            margin-right: -10%;
-        }
+    > div:nth-of-type(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 150px 0;
         .portfolioDesc {
             @include shadow($secondary, left);
+            margin-right: -35%;
         }
-
     }
 
-    .pokedex {
-        div {
-            float: left;
-        }
-        .portfolioDesc {
-            @include shadow($secondary);
-        }
-
+    .whatsForDinner img {
+        border: 1px solid #00F6FF;
     }
 }

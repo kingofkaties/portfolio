@@ -307,6 +307,7 @@ header::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: -20px;
 }
 
 .skillsList li {
@@ -377,43 +378,53 @@ header::after {
 }
 
 .portfolio .portfolioImg {
-  width: 60%;
+  width: 70%;
 }
 
 .portfolio .portfolioDesc {
   width: 50%;
   border: 1px solid black;
   padding: 50px;
-  margin-left: -10%;
+  margin-left: -35%;
   background-color: #fff;
 }
 
-.portfolio .beStill div {
-  float: left;
+.portfolio > div:nth-of-type(2n - 1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.portfolio .beStill .portfolioDesc {
+.portfolio > div:nth-of-type(2n - 1) .portfolioDesc {
   -webkit-box-shadow: 8px 8px #eeaa39;
           box-shadow: 8px 8px #eeaa39;
 }
 
-.portfolio .whatsForDinner div {
-  float: right;
-  margin-right: -10%;
+.portfolio > div:nth-of-type(2n) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 150px 0;
 }
 
-.portfolio .whatsForDinner .portfolioDesc {
+.portfolio > div:nth-of-type(2n) .portfolioDesc {
   -webkit-box-shadow: -8px 8px #eeaa39;
           box-shadow: -8px 8px #eeaa39;
+  margin-right: -35%;
 }
 
-.portfolio .pokedex div {
-  float: left;
-}
-
-.portfolio .pokedex .portfolioDesc {
-  -webkit-box-shadow: 8px 8px #eeaa39;
-          box-shadow: 8px 8px #eeaa39;
+.portfolio .whatsForDinner img {
+  border: 1px solid #00F6FF;
 }
 
 body {
@@ -441,7 +452,8 @@ h3 {
 }
 
 h1,
-h3 {
+h3,
+h4 {
   text-transform: uppercase;
 }
 
