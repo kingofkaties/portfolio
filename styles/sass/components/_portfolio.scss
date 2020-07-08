@@ -1,0 +1,44 @@
+.portfolio {
+
+    .portfolioImg {
+        width: 60%;
+    }
+
+    .portfolioDesc {
+        width: 50%;
+        border: 1px solid black;
+        padding: 50px;
+        margin-left: -10%;
+        background-color: $primary;
+    }
+
+    .beStill {
+        div {
+            float: left;
+        }
+        .portfolioDesc {
+            @include shadow($secondary);
+        }
+    }
+
+    .whatsForDinner {
+        div {
+            float: right;
+            margin-right: -10%;
+        }
+        .portfolioDesc {
+            @include shadow($secondary, left);
+        }
+
+    }
+
+    .pokedex {
+        div {
+            float: left;
+        }
+        .portfolioDesc {
+            @include shadow($secondary);
+        }
+
+    }
+}

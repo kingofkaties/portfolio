@@ -5,43 +5,44 @@
     justify-content: center;
     li {
         display: flex;
+        flex: 1 1 10%;
         flex-direction: column;
         justify-content: space-around;
         border: 1px solid black;
-        height: 150px;
-        width: 150px;
+        // height: 150px;
+        // min-width: 120px;
         margin: 20px;
         padding: 10px;
     }
     i {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
     li:nth-of-type(5n - 4) {
-        @include accent($accentOne);
+        @include shadow($accentOne);
         i {
             color: $accentOneVariant;
         }
     }
     li:nth-of-type(5n - 3) {
-        @include accent($accentTwo);
+        @include shadow($accentTwo);
         i {
             color: $accentTwoVariant;
         }
     }
     li:nth-of-type(5n - 2) {
-        @include accent($accentThree);
+        @include shadow($accentThree);
         i {
             color: $accentThreeVariant;
         }
     }
     li:nth-of-type(5n - 1) {
-        @include accent($secondary);
+        @include shadow($secondary);
         i {
             color: $secondaryVariant;
         }
     }
     li:nth-of-type(5n) {
-        @include accent($accentFour);
+        @include shadow($accentFour);
         i {
             color: $accentFourVariant;
         }

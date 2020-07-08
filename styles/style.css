@@ -227,8 +227,8 @@ img {
 
 header {
   height: 90vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(135, 76, 191, 0.8)), to(rgba(225, 64, 84, 0.8))), url("../../../../assets/letterBackground.jpg");
-  background-image: linear-gradient(to bottom right, rgba(135, 76, 191, 0.8), rgba(225, 64, 84, 0.8)), url("../../../../assets/letterBackground.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#5190d0), to(#e14054));
+  background-image: linear-gradient(to bottom right, #5190d0, #e14054);
   background-size: cover;
   color: #fff;
 }
@@ -313,6 +313,9 @@ header::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10%;
+          flex: 1 1 10%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -320,14 +323,12 @@ header::after {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border: 1px solid black;
-  height: 150px;
-  width: 150px;
   margin: 20px;
   padding: 10px;
 }
 
 .skillsList i {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .skillsList li:nth-of-type(5n - 4) {
@@ -373,6 +374,46 @@ header::after {
 
 .skillsList li:nth-of-type(5n) i {
   color: #cd70ca;
+}
+
+.portfolio .portfolioImg {
+  width: 60%;
+}
+
+.portfolio .portfolioDesc {
+  width: 50%;
+  border: 1px solid black;
+  padding: 50px;
+  margin-left: -10%;
+  background-color: #fff;
+}
+
+.portfolio .beStill div {
+  float: left;
+}
+
+.portfolio .beStill .portfolioDesc {
+  -webkit-box-shadow: 8px 8px #eeaa39;
+          box-shadow: 8px 8px #eeaa39;
+}
+
+.portfolio .whatsForDinner div {
+  float: right;
+  margin-right: -10%;
+}
+
+.portfolio .whatsForDinner .portfolioDesc {
+  -webkit-box-shadow: -8px 8px #eeaa39;
+          box-shadow: -8px 8px #eeaa39;
+}
+
+.portfolio .pokedex div {
+  float: left;
+}
+
+.portfolio .pokedex .portfolioDesc {
+  -webkit-box-shadow: 8px 8px #eeaa39;
+          box-shadow: 8px 8px #eeaa39;
 }
 
 body {
@@ -421,7 +462,7 @@ p {
 }
 
 section {
-  padding: 10%;
+  padding: 15% 10% 0 10%;
 }
 
 h3 {
