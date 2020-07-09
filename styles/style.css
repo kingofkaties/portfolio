@@ -357,6 +357,10 @@ h1 {
   background-color: #eeaa39;
 }
 
+.skills {
+  background-color: #f4f4f4;
+}
+
 .skillsList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,6 +390,7 @@ h1 {
   border: 1px solid black;
   margin: 20px;
   padding: 10px;
+  background-color: #fff;
 }
 
 .skillsList i {
@@ -437,6 +442,10 @@ h1 {
   color: #cd70ca;
 }
 
+.portfolio > div {
+  padding: 100px 0;
+}
+
 .portfolio .portfolioImg {
   width: 70%;
 }
@@ -474,7 +483,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 150px 0;
 }
 
 .portfolio > div:nth-of-type(2n) .portfolioDesc {
@@ -504,8 +512,8 @@ label {
 
 input {
   border: none;
-  -webkit-box-shadow: 3px 3px #eaeaea;
-          box-shadow: 3px 3px #eaeaea;
+  -webkit-box-shadow: 3px 3px #f4f4f4;
+          box-shadow: 3px 3px #f4f4f4;
 }
 
 input[type=text] {
@@ -588,7 +596,7 @@ p {
 }
 
 section {
-  padding: 15% 10% 0 10%;
+  padding: 10%;
 }
 
 h3 {

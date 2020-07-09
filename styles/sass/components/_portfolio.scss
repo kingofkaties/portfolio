@@ -1,5 +1,9 @@
 .portfolio {
 
+    > div {
+        padding: 100px 0;
+    }
+
     .portfolioImg {
         width: 70%;
     }
@@ -25,7 +29,7 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        margin: 150px 0;
+        // margin: 200px 0;
         .portfolioDesc {
             @include shadow($secondary, left);
             margin-right: -35%;

@@ -10,7 +10,7 @@ label {
 
 input {
     border: none;
-    box-shadow: 3px 3px rgb(234, 234, 234);
+    box-shadow: 3px 3px $altShadow;
 }
 
 input[type=text] {
