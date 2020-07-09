@@ -30,12 +30,34 @@ header {
     }
 }
 
+h1 {
+    margin: 25px 0;
+}
+
 .heroText {
-    // padding-left: 200px;
     padding-top: 250px;
-    // text-align: center;
     span {
-        color: $secondary;
         font-weight: 500;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            height: 0;
+            width: 0;
+            border-bottom: 3px solid $secondary;
+            border-left: 20vw solid transparent;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            height: 0;
+            width: 0;
+            border-top: 3px solid $secondary;
+            border-right: 20vw solid transparent;
+        }
     }
 }
