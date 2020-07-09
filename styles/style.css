@@ -454,8 +454,9 @@ h1 {
   width: 50%;
   border: 1px solid black;
   padding: 50px;
-  margin-left: -35%;
+  margin-left: -20%;
   background-color: #fff;
+  opacity: 0;
 }
 
 .portfolio > div:nth-of-type(2n - 1) {
@@ -470,6 +471,10 @@ h1 {
 .portfolio > div:nth-of-type(2n - 1) .portfolioDesc {
   -webkit-box-shadow: 5px 5px #eeaa39;
           box-shadow: 5px 5px #eeaa39;
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .portfolio > div:nth-of-type(2n) {
@@ -488,7 +493,11 @@ h1 {
 .portfolio > div:nth-of-type(2n) .portfolioDesc {
   -webkit-box-shadow: -5px 5px #eeaa39;
           box-shadow: -5px 5px #eeaa39;
-  margin-right: -35%;
+  margin-right: -20%;
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .portfolio .whatsForDinner img {
@@ -588,6 +597,10 @@ h3 {
 p {
   line-height: 1.3;
   padding-top: 10px;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .wrapper {

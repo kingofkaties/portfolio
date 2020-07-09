@@ -59,6 +59,10 @@ p {
 
 // LAYOUT
 
+html {
+    overflow-x: hidden;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
