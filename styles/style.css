@@ -279,8 +279,8 @@ header::after {
 }
 
 .aboutImg img {
-  -webkit-box-shadow: 8px 8px #eeaa39;
-          box-shadow: 8px 8px #eeaa39;
+  -webkit-box-shadow: 5px 5px #eeaa39;
+          box-shadow: 5px 5px #eeaa39;
 }
 
 .aboutText {
@@ -333,8 +333,8 @@ header::after {
 }
 
 .skillsList li:nth-of-type(5n - 4) {
-  -webkit-box-shadow: 8px 8px #5190d0;
-          box-shadow: 8px 8px #5190d0;
+  -webkit-box-shadow: 5px 5px #5190d0;
+          box-shadow: 5px 5px #5190d0;
 }
 
 .skillsList li:nth-of-type(5n - 4) i {
@@ -342,8 +342,8 @@ header::after {
 }
 
 .skillsList li:nth-of-type(5n - 3) {
-  -webkit-box-shadow: 8px 8px #ec5959;
-          box-shadow: 8px 8px #ec5959;
+  -webkit-box-shadow: 5px 5px #ec5959;
+          box-shadow: 5px 5px #ec5959;
 }
 
 .skillsList li:nth-of-type(5n - 3) i {
@@ -351,8 +351,8 @@ header::after {
 }
 
 .skillsList li:nth-of-type(5n - 2) {
-  -webkit-box-shadow: 8px 8px #49c997;
-          box-shadow: 8px 8px #49c997;
+  -webkit-box-shadow: 5px 5px #49c997;
+          box-shadow: 5px 5px #49c997;
 }
 
 .skillsList li:nth-of-type(5n - 2) i {
@@ -360,8 +360,8 @@ header::after {
 }
 
 .skillsList li:nth-of-type(5n - 1) {
-  -webkit-box-shadow: 8px 8px #eeaa39;
-          box-shadow: 8px 8px #eeaa39;
+  -webkit-box-shadow: 5px 5px #eeaa39;
+          box-shadow: 5px 5px #eeaa39;
 }
 
 .skillsList li:nth-of-type(5n - 1) i {
@@ -369,8 +369,8 @@ header::after {
 }
 
 .skillsList li:nth-of-type(5n) {
-  -webkit-box-shadow: 8px 8px #e86599;
-          box-shadow: 8px 8px #e86599;
+  -webkit-box-shadow: 5px 5px #e86599;
+          box-shadow: 5px 5px #e86599;
 }
 
 .skillsList li:nth-of-type(5n) i {
@@ -399,8 +399,8 @@ header::after {
 }
 
 .portfolio > div:nth-of-type(2n - 1) .portfolioDesc {
-  -webkit-box-shadow: 8px 8px #eeaa39;
-          box-shadow: 8px 8px #eeaa39;
+  -webkit-box-shadow: 5px 5px #eeaa39;
+          box-shadow: 5px 5px #eeaa39;
 }
 
 .portfolio > div:nth-of-type(2n) {
@@ -418,13 +418,67 @@ header::after {
 }
 
 .portfolio > div:nth-of-type(2n) .portfolioDesc {
-  -webkit-box-shadow: -8px 8px #eeaa39;
-          box-shadow: -8px 8px #eeaa39;
+  -webkit-box-shadow: -5px 5px #eeaa39;
+          box-shadow: -5px 5px #eeaa39;
   margin-right: -35%;
 }
 
 .portfolio .whatsForDinner img {
   border: 1px solid #00F6FF;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input {
+  border: none;
+  -webkit-box-shadow: 3px 3px #eaeaea;
+          box-shadow: 3px 3px #eaeaea;
+}
+
+input[type=text] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  height: 40px;
+}
+
+input[type=textarea] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  height: 150px;
+  margin-top: 20px;
+}
+
+input[type=submit] {
+  border: 1px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin-top: 20px;
+  height: 40px;
+}
+
+footer {
+  height: 100px;
+  background-color: #eeaa39;
+  margin-top: 10%;
 }
 
 body {
