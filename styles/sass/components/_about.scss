@@ -4,10 +4,9 @@
 }
 
 .aboutImg {
-    // width: 20%;
     flex: 0 0 40%;
-    // border: 1px solid black;
     img {
+        border-radius: 5px;
         @include shadow($secondary);
     }
 }

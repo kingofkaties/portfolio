@@ -7,10 +7,6 @@ header {
     color: $primary;
     &::before {
         content: '';
-        // color: $primary;
-        // background: $primary;
-        // height: 10%;
-        // width: 100%;
         position: absolute;
         bottom: 10%;
         height: 0;
@@ -76,10 +72,3 @@ h1 {
     }
 
 }
-
-// @keyframes waveLeft {
-//     50% {
-//         border-left: 190px solid transparent;
-//         border-right: none;
-//     }
-// }

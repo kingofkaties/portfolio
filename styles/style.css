@@ -339,6 +339,7 @@ h1 {
 }
 
 .aboutImg img {
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px #eeaa39;
           box-shadow: 5px 5px #eeaa39;
 }
@@ -504,6 +505,41 @@ h1 {
   border: 1px solid #00F6FF;
 }
 
+.portfolio .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  text-decoration: none;
+  background-color: #eeaa39;
+  -webkit-box-shadow: 5px 5px #dce53e;
+          box-shadow: 5px 5px #dce53e;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.portfolio a:hover, .portfolio a:focus {
+  background: -webkit-gradient(linear, left top, right bottom, from(#874cbf), to(#e14054));
+  background: linear-gradient(to bottom right, #874cbf, #e14054);
+  color: #fff;
+}
+
+.contact {
+  background-color: #f4f4f4;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,10 +555,13 @@ label {
   text-transform: uppercase;
 }
 
-input {
+input,
+textarea {
   border: none;
   -webkit-box-shadow: 3px 3px #f4f4f4;
           box-shadow: 3px 3px #f4f4f4;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 input[type=text] {
@@ -532,7 +571,11 @@ input[type=text] {
   height: 40px;
 }
 
-input[type=textarea] {
+input[type=text]:focus {
+  border: 1px solid #dce53e;
+}
+
+textarea {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -540,8 +583,11 @@ input[type=textarea] {
   margin-top: 20px;
 }
 
+textarea:focus {
+  border: 1px solid #dce53e;
+}
+
 input[type=submit] {
-  border: 1px solid black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -550,6 +596,17 @@ input[type=submit] {
           flex: 1 1 100%;
   margin-top: 20px;
   height: 40px;
+  background-color: #eeaa39;
+  -webkit-box-shadow: 5px 5px #dce53e;
+          box-shadow: 5px 5px #dce53e;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+  background: -webkit-gradient(linear, left top, right bottom, from(#874cbf), to(#e14054));
+  background: linear-gradient(to bottom right, #874cbf, #e14054);
+  color: #fff;
 }
 
 footer {
@@ -565,8 +622,15 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+a,
+input,
+textarea {
   font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #222222;
 }
 
 h1 {
@@ -584,7 +648,8 @@ h3 {
 
 h1,
 h3,
-h4 {
+h4,
+a {
   text-transform: uppercase;
 }
 

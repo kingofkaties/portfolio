@@ -2,11 +2,10 @@
 
 function scrollShow() {
 
-    // get height of screen, divide by two so that effect happens in middle of screen
-    let screenPosition = window.innerHeight / 1.5
+    // get height of screen
+    let screenPosition = window.innerHeight
 
-    // select all elements with class of portfolioDesc
-    // put in array?
+    // select all elements with class of portfolioDesc and store inside an array
     const portfolioDesc = document.getElementsByClassName('portfolioDesc');
     console.log(portfolioDesc)
     
@@ -16,6 +15,7 @@ function scrollShow() {
         // get the distance from the top of the page to the top of the element being slid in
         let portfolioPosition = div.getBoundingClientRect().top;
         
+        // check position of div relative to screen, and trigger CSS change when appropriate
         if (portfolioPosition < screenPosition) {
             div.style.opacity='1';
             div.style.transform='translateX(0)';

@@ -43,10 +43,28 @@
     .whatsForDinner img {
         border: 1px solid #00F6FF;
     }
-}
 
-// .slideIn {
-//     opacity: 1;
-//     transform: translateX(0);
-//     // transition: 1s;
-// }
+    .links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        flex: 0 0 40%;
+        text-decoration: none;
+        background-color: $secondary;
+        @include shadow($secondaryVariant);
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.1s;
+        &:hover,
+        &:focus {
+            background: linear-gradient(to bottom right, $gradientOne,$gradientTwo);
+            color: $primary;
+
+        }
+    }
+
+}
