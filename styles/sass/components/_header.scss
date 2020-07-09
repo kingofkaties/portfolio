@@ -43,21 +43,43 @@ h1 {
             content: '';
             position: absolute;
             bottom: -5px;
-            left: 0;
+            left: -5px;
             height: 0;
             width: 0;
             border-bottom: 3px solid $secondary;
-            border-left: 20vw solid transparent;
+            border-left: 190px solid transparent;
+            animation: flip 2s ease infinite;
         }
         &::before {
             content: '';
             position: absolute;
             top: -5px;
-            left: 0;
+            left: -5px;
             height: 0;
             width: 0;
             border-top: 3px solid $secondary;
-            border-right: 20vw solid transparent;
+            border-right: 190px solid transparent;
+            animation: flip 2s ease infinite;
         }
     }
 }
+
+@keyframes flip {
+    35% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+    65% {
+        transform: scaleX(1);
+    }
+
+}
+
+// @keyframes waveLeft {
+//     50% {
+//         border-left: 190px solid transparent;
+//         border-right: none;
+//     }
+// }
