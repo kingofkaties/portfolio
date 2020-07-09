@@ -1,8 +1,8 @@
 header {
     height: 90vh;
-    background-image:
-        linear-gradient(to bottom right, $accentOne, $gradientTwo);
-        // url('../../../../assets/letterBackground.jpg');
+    background:
+        linear-gradient(to bottom right, $gradientOneOpacity, $gradientTwoOpacity),
+        url('../../../../assets/letterBackground.jpg');
     background-size: cover;
     color: $primary;
     &::before {

@@ -227,8 +227,8 @@ img {
 
 header {
   height: 90vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#5190d0), to(#e14054));
-  background-image: linear-gradient(to bottom right, #5190d0, #e14054);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(81, 144, 208, 0.9)), to(rgba(225, 64, 84, 0.9))), url("../../../../assets/letterBackground.jpg");
+  background: linear-gradient(to bottom right, rgba(81, 144, 208, 0.9), rgba(225, 64, 84, 0.9)), url("../../../../assets/letterBackground.jpg");
   background-size: cover;
   color: #fff;
 }

@@ -12,7 +12,7 @@ function scrollShow() {
     
     // forEach or .map(), go through array and apply transitioning when each image triggers
     for (const div of portfolioDesc) {
-        console.log(div)
+
         // get the distance from the top of the page to the top of the element being slid in
         let portfolioPosition = div.getBoundingClientRect().top;
         

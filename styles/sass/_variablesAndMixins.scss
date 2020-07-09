@@ -10,9 +10,10 @@ $accentThreeVariant: #5fd3d4;
 $accentFour: #e86599; // pink
 $accentFourVariant: #cd70ca;
 $gradientOne: #874cbf; // purple
-// $gradientOneOpacity: rgba(135, 76, 191, 0.8); // purple
+// $gradientOneOpacity: rgba(135, 76, 191, 0.5); // purple
+$gradientOneOpacity: rgba(81, 144, 208, 0.9); // purple
 $gradientTwo: #e14054; // dark pink
-// $gradientTwoOpacity: rgba(225, 64, 84, 0.8); // dark pink
+$gradientTwoOpacity: rgba(225, 64, 84, 0.9); // dark pink
 $altShadow: #f4f4f4;
 
 @mixin shadow($color, $direction:right) {
