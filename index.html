@@ -151,20 +151,20 @@
     <!-- CONTACT -->
     <section class="contact wrapper">
         <h3>Get In Touch</h3>
-        <form action="">
-            <label class="sr-only" for="firstName">
-                First Name:
+        <form method="POST" action="https://formspree.io/xdowwqzk">
+            <label class="sr-only" for="fullName">
+                Full Name:
             </label>
-            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="fullName" placeholder="Full Name" required name="contact">
             <label class="sr-only" for="lastName">
-                Last Name:
+                Email:
             </label>
-            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email" required name="contact">
             <label class="sr-only" for="message">
                 Message:
             </label>
-            <textarea id="message" placeholder="Write your message here..."></textarea>
-            <input type="submit" value="Send Message">
+            <textarea id="message" placeholder="Write your message here..." required name="contact"></textarea>
+            <input type="submit" value="Send Message" name="contact">
         </form>
     </section>
     <footer>

@@ -74,10 +74,11 @@ h2 {
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
