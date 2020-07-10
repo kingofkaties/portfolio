@@ -259,7 +259,7 @@ h1 {
 }
 
 .heroText {
-  padding-top: 250px;
+  padding-top: 30vh;
 }
 
 .heroText span {
@@ -443,10 +443,6 @@ h1 {
   color: #cd70ca;
 }
 
-.portfolio > div {
-  padding: 70px 0;
-}
-
 .portfolio .portfolioImg {
   width: 70%;
 }
@@ -480,6 +476,7 @@ h1 {
 }
 
 .portfolio > div:nth-of-type(2n) {
+  padding: 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,9 +529,13 @@ h1 {
 }
 
 .portfolio a:hover, .portfolio a:focus {
-  background: -webkit-gradient(linear, left top, right bottom, from(#874cbf), to(#e14054));
-  background: linear-gradient(to bottom right, #874cbf, #e14054);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(81, 144, 208, 0.9)), to(rgba(225, 64, 84, 0.9)));
+  background: linear-gradient(to bottom right, rgba(81, 144, 208, 0.9), rgba(225, 64, 84, 0.9));
   color: #fff;
+}
+
+.portfolio h4 {
+  margin-bottom: 20px;
 }
 
 .contact {
@@ -574,6 +575,8 @@ input[type=text] {
 
 input[type=text]:focus {
   border: 1px solid #dce53e;
+  -webkit-box-shadow: 0 0 5px #dce53e;
+          box-shadow: 0 0 5px #dce53e;
 }
 
 textarea {
@@ -586,6 +589,8 @@ textarea {
 
 textarea:focus {
   border: 1px solid #dce53e;
+  -webkit-box-shadow: 0 0 5px #dce53e;
+          box-shadow: 0 0 5px #dce53e;
 }
 
 input[type=submit] {
@@ -605,8 +610,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
-  background: -webkit-gradient(linear, left top, right bottom, from(#874cbf), to(#e14054));
-  background: linear-gradient(to bottom right, #874cbf, #e14054);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(81, 144, 208, 0.9)), to(rgba(225, 64, 84, 0.9)));
+  background: linear-gradient(to bottom right, rgba(81, 144, 208, 0.9), rgba(225, 64, 84, 0.9));
   color: #fff;
 }
 
@@ -627,9 +632,10 @@ footer::before {
   content: '';
   position: absolute;
   top: 0;
-  width: 0;
-  border-top: 5vh solid #5190d0;
-  border-right: 100vw solid transparent;
+  height: 15px;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(81, 144, 208, 0.9)), to(rgba(225, 64, 84, 0.9)));
+  background: linear-gradient(to bottom right, rgba(81, 144, 208, 0.9), rgba(225, 64, 84, 0.9));
 }
 
 footer::after {
@@ -638,7 +644,7 @@ footer::after {
   top: 0;
   height: 0;
   width: 0;
-  border-top: 2.5vh solid #fff;
+  border-top: 15px solid #fff;
   border-left: 50vw solid transparent;
   border-right: 50vw solid transparent;
 }
@@ -677,7 +683,8 @@ h3 {
 h1,
 h3,
 h4,
-a {
+a,
+input[type=submit] {
   text-transform: uppercase;
 }
 
@@ -692,6 +699,10 @@ p {
   padding-top: 10px;
 }
 
+h2 {
+  line-height: 1.6;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -702,9 +713,86 @@ html {
 }
 
 section {
-  padding: 10%;
+  padding: 100px 10% 100px 10%;
+}
+
+header div {
+  padding: 0 10% 0 10%;
 }
 
 h3 {
   margin-bottom: 50px;
+}
+
+@media (max-width: 910px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+  .portfolio > div,
+  .portfolio > div:nth-of-type(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio > div .portfolioDesc,
+  .portfolio > div:nth-of-type(2n) .portfolioDesc {
+    margin: -170px 0 0 0;
+  }
+  .portfolio .portfolioImg {
+    width: 100%;
+  }
+  .portfolio .portfolioDesc {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 15% 10% 20% 10%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about img {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #firstName {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 462px) {
+  .heroText {
+    padding-top: 20vh;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .portfolioDesc {
+    padding: 30px;
+  }
 }

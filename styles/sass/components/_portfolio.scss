@@ -1,8 +1,7 @@
 .portfolio {
 
-    > div {
-        padding: 70px 0;
-    }
+    // > div {
+    // }
 
     .portfolioImg {
         width: 70%;
@@ -29,6 +28,8 @@
     }
     
     > div:nth-of-type(2n) {
+                padding: 70px 0;
+
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -62,11 +63,14 @@
         transition: 0.1s;
         &:hover,
         &:focus {
-            background: linear-gradient(to bottom right, $gradientOne,$gradientTwo);
+            background: linear-gradient(to bottom right, $gradientOneOpacity, $gradientTwoOpacity);
             color: $primary;
 
         }
     }
 
+    h4 {
+        margin-bottom: 20px;
+    }
 
 }

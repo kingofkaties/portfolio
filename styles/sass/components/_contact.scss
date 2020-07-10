@@ -26,6 +26,7 @@ input[type=text] {
     height: 40px;
     &:focus {
         border: 1px solid $secondaryVariant;
+        box-shadow: 0 0 5px $secondaryVariant;
     }
 
 }
@@ -36,6 +37,7 @@ textarea {
     margin-top: 20px;
     &:focus {
         border: 1px solid $secondaryVariant;
+        box-shadow: 0 0 5px $secondaryVariant;
     }
 
 }
@@ -50,7 +52,7 @@ input[type=submit] {
     transition: color 0.1s;
     &:hover,
     &:focus {
-        background: linear-gradient(to bottom right, $gradientOne,$gradientTwo);
+        background: linear-gradient(to bottom right, $gradientOneOpacity, $gradientTwoOpacity);
         color: $primary;
     }
 }

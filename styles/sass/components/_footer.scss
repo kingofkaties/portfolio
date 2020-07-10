@@ -12,10 +12,11 @@ footer {
         content: '';
         position: absolute;
         top: 0;
-        // height: 20px;
-        width: 0;
-        border-top: 5vh solid $accentOne;
-        border-right: 100vw solid transparent;
+        height: 15px;
+        width: 50%;
+        background: linear-gradient(to bottom right, $gradientOneOpacity, $gradientTwoOpacity);
+        // border-top: 5vh solid $gradientOneOpacity;
+        // border-right: 100vw solid transparent;
     }
     &::after {
         content: '';
@@ -23,7 +24,7 @@ footer {
         top: 0;
         height: 0;
         width: 0;
-        border-top: 2.5vh solid $primary;
+        border-top: 15px solid $primary;
         border-left: 50vw solid transparent;
         border-right: 50vw solid transparent;
     }

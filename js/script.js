@@ -25,4 +25,18 @@ function scrollShow() {
     console.log(portfolioDesc);
 }
 
-window.addEventListener('scroll', scrollShow);
+// debounce function to stop scroll event from turning website sluggish
+function debounce(method, delay) {
+    clearTimeout(method._tId);
+    method._tId = setTimeout(function () {
+        method();
+    }, delay);
+}
+
+// $(window).scroll(function () {
+//     debounce(handleScroll, 100);
+// });
+
+window.addEventListener('scroll', function () {
+    debounce(scrollShow, 50);
+});
