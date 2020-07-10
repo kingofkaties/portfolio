@@ -21,14 +21,32 @@
             <h1>Katie King</h1>
             <h2>a 
                 <span>
-                    web developer
+                    frontend web developer
                 </span>
             based in Toronto, Canada.</h2>
         </div>
     </header>
+    <nav>
+        <li>
+            <p class="hiddenAbout">About</p>
+            <a href="#about" class="dot dotAbout"></a>
+        </li>
+        <li>
+            <p class="hiddenSkills">Skills</p>
+            <a href="#skills" class="dot dotSkills"></a>
+        </li>
+        <li>
+            <p class="hiddenProjects">Projects</p>
+            <a href="#projects" class="dot dotProjects"></a>
+        </li>
+        <li>
+            <p class="hiddenContact">Contact</p>
+            <a href="#contact" class="dot dotContact"></a>
+        </li>
+    </nav>
 
     <!-- ABOUT -->
-    <section class="about wrapper">
+    <section class="about wrapper" id="about">
         <div class="aboutImg">
             <img src="./assets/headshot.jpg" alt="A photo of me!">
         </div>
@@ -42,7 +60,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="skills wrapper">
+    <section class="skills wrapper" id="skills">
         <h3>Skills</h3>
         <ul class="skillsList">
             <li>
@@ -102,7 +120,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="portfolio clearfix wrapper">
+    <section class="portfolio clearfix wrapper" id="projects">
         <h3>Projects</h3>
             <div class="beStill">
                 <div class="portfolioImg">
@@ -149,7 +167,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact wrapper">
+    <section class="contact wrapper" id="contact">
         <h3>Get In Touch</h3>
         <form method="POST" action="https://formspree.io/xdowwqzk">
             <label class="sr-only" for="fullName">

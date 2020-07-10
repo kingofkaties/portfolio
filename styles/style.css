@@ -267,62 +267,6 @@ h1 {
   position: relative;
 }
 
-.heroText span::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: -5px;
-  height: 0;
-  width: 0;
-  border-bottom: 3px solid #eeaa39;
-  border-left: 190px solid transparent;
-  -webkit-animation: flip 2s ease infinite;
-          animation: flip 2s ease infinite;
-}
-
-.heroText span::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  height: 0;
-  width: 0;
-  border-top: 3px solid #eeaa39;
-  border-right: 190px solid transparent;
-  -webkit-animation: flip 2s ease infinite;
-          animation: flip 2s ease infinite;
-}
-
-@-webkit-keyframes flip {
-  35% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  50% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-  }
-  65% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-@keyframes flip {
-  35% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  50% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-  }
-  65% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -649,6 +593,39 @@ footer::after {
   border-top: 15px solid #fff;
   border-left: 50vw solid transparent;
   border-right: 50vw solid transparent;
+}
+
+nav {
+  position: absolute;
+  position: fixed;
+  left: 0;
+  top: 35vh;
+  text-decoration: none;
+  list-style: none;
+  color: #eeaa39;
+}
+
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: #eeaa39;
+}
+
+.hiddenAbout,
+.hiddenSkills,
+.hiddenProjects,
+.hiddenContact {
+  display: none;
+}
+
+.showAbout,
+.showSkills,
+.showProjects,
+.showContact {
+  display: inline-block;
 }
 
 body {

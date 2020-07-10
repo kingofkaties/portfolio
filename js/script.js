@@ -33,10 +33,30 @@ function debounce(method, delay) {
     }, delay);
 }
 
-// $(window).scroll(function () {
-//     debounce(handleScroll, 100);
-// });
-
 window.addEventListener('scroll', function () {
-    debounce(scrollShow, 50);
+    debounce(scrollShow, 10);
 });
+
+// dot nav
+
+function clickNav() {
+
+}
+
+document.addEventListener('mouseover', function(e) {
+    
+    // check if one of the nav dots was clicked, and if so, execute function
+    if (event.target.matches('.dotAbout')) {
+
+        const tags = document.getElementsByClassName('hiddenAbout');
+
+        const tag = tags[0];
+
+        console.log(tag)
+        tag.className('showAbout')
+
+    } else return;
+
+    console.log(e.target);
+
+})

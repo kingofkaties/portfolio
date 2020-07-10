@@ -1,0 +1,48 @@
+nav {
+    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 35vh;
+    text-decoration: none;
+    list-style: none;
+    color: $secondary;
+}
+
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: $secondary;
+}
+
+// .dotAbout {
+//     background-color: $secondary;
+// }
+
+// .dotSkills {
+//     background-color: $accentTwo;
+// }
+
+// .dotProjects {
+//     background-color: $accentThree;
+// }
+
+// .dotContact {
+//     background-color: $accentFour;
+// }
+
+.hiddenAbout,
+.hiddenSkills,
+.hiddenProjects,
+.hiddenContact {
+    display: none;
+}
+
+.showAbout,
+.showSkills,
+.showProjects,
+.showContact {
+    display: inline-block;
+}
