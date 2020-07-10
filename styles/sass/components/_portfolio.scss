@@ -1,7 +1,7 @@
 .portfolio {
 
     > div {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 
     .portfolioImg {
@@ -10,11 +10,12 @@
 
     .portfolioDesc {
         width: 50%;
-        border: 1px solid black;
+        border: 1px solid $altShadow;
         padding: 50px;
         margin-left: -20%;
         background-color: $primary;
         opacity: 0;
+        border-radius: 5px;
     }
 
     > div:nth-of-type(2n - 1) {
@@ -26,7 +27,7 @@
             transition: all 1s;
         }
     }
-
+    
     > div:nth-of-type(2n) {
         display: flex;
         flex-direction: row-reverse;
@@ -66,5 +67,6 @@
 
         }
     }
+
 
 }

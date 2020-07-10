@@ -13,11 +13,12 @@
         flex: 1 1 10%;
         flex-direction: column;
         justify-content: space-around;
-        border: 1px solid black;
+        // border: 1px solid black;
         // height: 150px;
         // min-width: 120px;
         margin: 20px;
         padding: 10px;
+        border-radius: 5px;
         background-color: $primary;
     }
     i {

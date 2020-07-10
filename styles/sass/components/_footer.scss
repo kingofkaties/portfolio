@@ -2,4 +2,30 @@ footer {
     height: 100px;
     background-color: $secondary;
     margin-top: 10%;
+    position: relative;
+    p {
+        bottom: 5px;
+        text-align: center;
+        padding-top: 60px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        // height: 20px;
+        width: 0;
+        border-top: 5vh solid $accentOne;
+        border-right: 100vw solid transparent;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 0;
+        width: 0;
+        border-top: 2.5vh solid $primary;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+    }
+
 }

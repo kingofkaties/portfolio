@@ -388,9 +388,9 @@ h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 1px solid black;
   margin: 20px;
   padding: 10px;
+  border-radius: 5px;
   background-color: #fff;
 }
 
@@ -444,7 +444,7 @@ h1 {
 }
 
 .portfolio > div {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .portfolio .portfolioImg {
@@ -453,11 +453,12 @@ h1 {
 
 .portfolio .portfolioDesc {
   width: 50%;
-  border: 1px solid black;
+  border: 1px solid #f4f4f4;
   padding: 50px;
   margin-left: -20%;
   background-color: #fff;
   opacity: 0;
+  border-radius: 5px;
 }
 
 .portfolio > div:nth-of-type(2n - 1) {
@@ -613,6 +614,33 @@ footer {
   height: 100px;
   background-color: #eeaa39;
   margin-top: 10%;
+  position: relative;
+}
+
+footer p {
+  bottom: 5px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  border-top: 5vh solid #5190d0;
+  border-right: 100vw solid transparent;
+}
+
+footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 0;
+  border-top: 2.5vh solid #fff;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
 }
 
 body {
