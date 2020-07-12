@@ -236,7 +236,7 @@ header {
 header::before {
   content: '';
   position: absolute;
-  bottom: 10%;
+  bottom: 10vh;
   height: 0;
   width: 0;
   border-bottom: 5vh solid #eeaa39;
@@ -246,7 +246,7 @@ header::before {
 header::after {
   content: '';
   position: absolute;
-  bottom: 10%;
+  bottom: 10vh;
   height: 0;
   width: 0;
   border-bottom: 2.5vh solid #fff;
@@ -822,6 +822,6 @@ h3 {
     margin: 10px;
   }
   .portfolio .portfolioDesc {
-    padding: 15px;
+    padding: 20px;
   }
 }
