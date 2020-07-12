@@ -121,4 +121,17 @@
     .portfolio .portfolioDesc {
         padding: 20px;
     }
+
+    .portfolio > div:nth-of-type(2n - 1) {
+        .portfolioDesc {
+            transform: translateX(15%);
+        }
+    }
+
+    .portfolio > div:nth-of-type(2n) {
+        .portfolioDesc {
+            transform: translateX(-15%);
+        }
+    }
+
 }

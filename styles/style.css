@@ -495,6 +495,37 @@ h1 {
   background-color: #f4f4f4;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 70px;
+}
+
+.social a {
+  -webkit-box-shadow: 5px 5px #dce53e;
+          box-shadow: 5px 5px #dce53e;
+  text-align: center;
+  min-width: 40px;
+  min-height: 40px;
+  padding-top: 4px;
+  font-size: 2rem;
+  margin: 0 20px;
+  background-color: #eeaa39;
+  border-radius: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.social a:hover, .social a:focus {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(81, 144, 208, 0.9)), to(rgba(225, 64, 84, 0.9)));
+  background: linear-gradient(to bottom right, rgba(81, 144, 208, 0.9), rgba(225, 64, 84, 0.9));
+  color: #fff;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -826,5 +857,13 @@ h3 {
   }
   .portfolio .portfolioDesc {
     padding: 20px;
+  }
+  .portfolio > div:nth-of-type(2n - 1) .portfolioDesc {
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
+  .portfolio > div:nth-of-type(2n) .portfolioDesc {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
   }
 }
