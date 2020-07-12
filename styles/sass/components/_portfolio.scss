@@ -15,6 +15,7 @@
         background-color: $primary;
         opacity: 0;
         border-radius: 5px;
+        overflow-x: hidden;
     }
 
     > div:nth-of-type(2n - 1) {

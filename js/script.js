@@ -18,7 +18,7 @@ function scrollShow() {
         // check position of div relative to screen, and trigger CSS change when appropriate
         if (portfolioPosition < screenPosition) {
             div.style.opacity='1';
-            div.style.transform='translateX(0)';
+            div.style.transform='translateX(0)'
         }
     }
 
