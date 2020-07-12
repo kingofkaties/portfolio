@@ -3,12 +3,17 @@
     justify-content: space-between;
 }
 
-.aboutImg {
+.aboutImgMobile,
+.aboutImgDesktop {
     flex: 0 0 40%;
     img {
         border-radius: 5px;
         @include shadow($secondary);
     }
+}
+
+.aboutImgMobile {
+    display: none;
 }
 
 .aboutText {

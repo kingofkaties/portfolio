@@ -1,48 +1,55 @@
 nav {
-    position: absolute;
+    z-index: 2;
+    color: #222;
     position: fixed;
-    left: 0;
-    top: 35vh;
-    text-decoration: none;
-    list-style: none;
-    color: $secondary;
+    width: 100%;
+    background-color: $primary;
+    li {
+        display: inline-block;
+        padding: 0 10px;
+        position: relative;
+        &:hover::after,
+        &:focus::after {
+            content: '';
+            position: absolute;
+            background-color: $secondaryVariant;
+            height: 5px;
+            width: 100%;
+            left: 0;
+            bottom: 10px;
+            border-radius: 5px;
+        }
+    }
+    a {
+        display: inline-block;
+        padding: 20px 0;
+        text-decoration: none;
+    }
 }
 
-.dot {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    margin: 10px;
-    background-color: $secondary;
-}
-
-// .dotAbout {
-//     background-color: $secondary;
-// }
-
-// .dotSkills {
-//     background-color: $accentTwo;
-// }
-
-// .dotProjects {
-//     background-color: $accentThree;
-// }
-
-// .dotContact {
-//     background-color: $accentFour;
-// }
-
-.hiddenAbout,
-.hiddenSkills,
-.hiddenProjects,
-.hiddenContact {
+.navMobile {
     display: none;
+    bottom: 0;
 }
 
-.showAbout,
-.showSkills,
-.showProjects,
-.showContact {
-    display: inline-block;
-}
+// .navMobile {
+//     display: none;
+//     opacity: 0;
+//     height: 100%;
+//     width: 150px;
+//     text-align: center;
+// }
+
+// .navMobile {
+//     position: fixed;
+// }
+
+// input[type=checkbox] {
+//     display: none;
+// }
+
+// input[type=checkbox]:checked + ul {
+//     display: block;
+//     opacity: 1;
+    // right: 0;
+// }
