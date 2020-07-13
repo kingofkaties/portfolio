@@ -49,6 +49,17 @@
             bottom: 0;
             a {
                 text-transform: lowercase;
+                &:hover::after,
+                &:focus::after {
+                    content: '';
+                    position: absolute;
+                    background-color: $primary;
+                    height: 5px;
+                    width: 100%;
+                    left: 0;
+                    bottom: 10px;
+                    border-radius: 5px;
+                }
             }
         }
     }

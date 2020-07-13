@@ -649,7 +649,13 @@ nav li {
   position: relative;
 }
 
-nav li:hover::after, nav li:focus::after {
+nav a {
+  display: inline-block;
+  padding: 20px 0;
+  text-decoration: none;
+}
+
+nav a:hover::after, nav a:focus::after {
   content: '';
   position: absolute;
   background-color: #dce53e;
@@ -658,12 +664,6 @@ nav li:hover::after, nav li:focus::after {
   left: 0;
   bottom: 10px;
   border-radius: 5px;
-}
-
-nav a {
-  display: inline-block;
-  padding: 20px 0;
-  text-decoration: none;
 }
 
 .navMobile {
@@ -793,6 +793,16 @@ h3 {
   }
   nav li a {
     text-transform: lowercase;
+  }
+  nav li a:hover::after, nav li a:focus::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 10px;
+    border-radius: 5px;
   }
   footer {
     height: 140px;

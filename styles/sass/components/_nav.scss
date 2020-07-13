@@ -8,6 +8,11 @@ nav {
         display: inline-block;
         padding: 0 10px;
         position: relative;
+    }
+    a {
+        display: inline-block;
+        padding: 20px 0;
+        text-decoration: none;
         &:hover::after,
         &:focus::after {
             content: '';
@@ -19,11 +24,6 @@ nav {
             bottom: 10px;
             border-radius: 5px;
         }
-    }
-    a {
-        display: inline-block;
-        padding: 20px 0;
-        text-decoration: none;
     }
 }
 
