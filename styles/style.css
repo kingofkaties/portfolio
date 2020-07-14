@@ -395,6 +395,14 @@ h1 {
   color: #cd70ca;
 }
 
+.jQueryBox {
+  position: relative;
+}
+
+.jQueryIcon {
+  position: absolute;
+}
+
 .portfolio .portfolioImg {
   width: 70%;
 }
