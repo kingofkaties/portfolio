@@ -16,6 +16,10 @@
         opacity: 0;
         border-radius: 5px;
         overflow-x: hidden;
+        > p > a {
+            text-transform: capitalize;
+            font-family: "Roboto";
+        }
     }
 
     > div:nth-of-type(2n - 1) {
@@ -50,22 +54,21 @@
     .links {
         display: flex;
         justify-content: space-between;
-    }
-
-    a {
-        flex: 0 0 40%;
-        text-decoration: none;
-        background-color: $secondary;
-        @include shadow($secondaryVariant);
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 5px;
-        text-align: center;
-        transition: 0.1s;
-        &:hover,
-        &:focus {
-            background: linear-gradient(to bottom right, $gradientOneOpacity, $gradientTwoOpacity);
-            color: $primary;
+        a {
+            flex: 0 0 40%;
+            text-decoration: none;
+            background-color: $secondary;
+            @include shadow($secondaryVariant);
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+            transition: 0.1s;
+            &:hover,
+            &:focus {
+                background: linear-gradient(to bottom right, $gradientOneOpacity, $gradientTwoOpacity);
+                color: $primary;
+            }
         }
     }
 

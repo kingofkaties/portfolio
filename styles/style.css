@@ -410,6 +410,11 @@ h1 {
   overflow-x: hidden;
 }
 
+.portfolio .portfolioDesc > p > a {
+  text-transform: capitalize;
+  font-family: "Roboto";
+}
+
 .portfolio > div:nth-of-type(2n - 1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,7 +470,7 @@ h1 {
           justify-content: space-between;
 }
 
-.portfolio a {
+.portfolio .links a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
@@ -481,7 +486,7 @@ h1 {
   transition: 0.1s;
 }
 
-.portfolio a:hover, .portfolio a:focus {
+.portfolio .links a:hover, .portfolio .links a:focus {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(81, 144, 208, 0.9)), to(rgba(225, 64, 84, 0.9)));
   background: linear-gradient(to bottom right, rgba(81, 144, 208, 0.9), rgba(225, 64, 84, 0.9));
   color: #fff;
