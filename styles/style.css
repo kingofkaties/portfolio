@@ -344,10 +344,14 @@ h1 {
   padding: 10px;
   border-radius: 5px;
   background-color: #fff;
+  max-height: 150px;
 }
 
-.skillsList i {
+.skillsList i,
+.skillsList img {
   font-size: 2.5rem;
+  max-width: 50px;
+  align-self: center;
 }
 
 .skillsList li:nth-of-type(5n - 4) {
@@ -355,7 +359,7 @@ h1 {
           box-shadow: 5px 5px #5190d0;
 }
 
-.skillsList li:nth-of-type(5n - 4) i {
+.skillsList li:nth-of-type(5n - 4) {
   color: #5155d0;
 }
 
@@ -364,7 +368,7 @@ h1 {
           box-shadow: 5px 5px #ec5959;
 }
 
-.skillsList li:nth-of-type(5n - 3) i {
+.skillsList li:nth-of-type(5n - 3) {
   color: #ef9f37;
 }
 
@@ -373,7 +377,7 @@ h1 {
           box-shadow: 5px 5px #49c997;
 }
 
-.skillsList li:nth-of-type(5n - 2) i {
+.skillsList li:nth-of-type(5n - 2) {
   color: #5fd3d4;
 }
 
@@ -382,7 +386,7 @@ h1 {
           box-shadow: 5px 5px #eeaa39;
 }
 
-.skillsList li:nth-of-type(5n - 1) i {
+.skillsList li:nth-of-type(5n - 1) {
   color: #dce53e;
 }
 
@@ -391,16 +395,8 @@ h1 {
           box-shadow: 5px 5px #e86599;
 }
 
-.skillsList li:nth-of-type(5n) i {
+.skillsList li:nth-of-type(5n) {
   color: #cd70ca;
-}
-
-.jQueryBox {
-  position: relative;
-}
-
-.jQueryIcon {
-  position: absolute;
 }
 
 .portfolio .portfolioImg {
